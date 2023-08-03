@@ -55,5 +55,6 @@ if __name__ == "__main__":
     print(f"프리미엄 객실 비수기 가격: {regular_rates.fee().amount}")
     print(f"프리미엄 객실 성수기 가격: {regular_rates.busy_season_fee()}")
 
+    # 응용
     cash = Cash(regular_rates)
     print(cash.billing("busy"))
